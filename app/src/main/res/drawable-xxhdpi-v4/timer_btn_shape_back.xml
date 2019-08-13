@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size android:height="29dp" android:width="60dp" />
+                    <gradient android:startColor="#ff28e98d" android:endColor="#ff1dd17b" android:useLevel="true" android:angle="180.0" android:type="linear" />
+                    <corners android:topLeftRadius="0dp" android:topRightRadius="33dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="33dp" />
+                </shape>
+            </item>
+            <item android:height="17dp" android:width="17dp" android:left="7dp" android:top="6dp" android:right="37dp" android:bottom="6dp">
+                <bitmap android:src="@drawable/back" />
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size android:height="29dp" android:width="60dp" />
+                    <gradient android:startColor="#ff28e98d" android:endColor="#ff1dd17b" android:useLevel="true" android:angle="180.0" android:type="linear" />
+                    <corners android:topLeftRadius="0dp" android:topRightRadius="33dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="33dp" />
+                </shape>
+            </item>
+            <item android:height="17dp" android:width="17dp" android:left="7dp" android:top="6dp" android:right="37dp" android:bottom="6dp">
+                <bitmap android:src="@drawable/back" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

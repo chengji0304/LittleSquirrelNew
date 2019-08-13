@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="40px">
+        <include layout="@layout/top" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginTop="257px"
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="1195px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px">
+        <!--<include layout="@layout/user_select_goods"/>-->
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/buttom"
+        android:layout_marginTop="1495px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        >
+        <include layout="@layout/bottom" />
+    </FrameLayout>
+    <com.panda.littlesquirrel.view.BackAndTimerView
+        android:visibility="gone"
+        android:id="@+id/backAndTime"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="285px" />
+
+</RelativeLayout>

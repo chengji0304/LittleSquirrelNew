@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="1000px"
+        android:layout_height="1195px"
+        android:background="@drawable/home_page_mid_bg">
+
+
+    <TextView
+        android:id="@+id/tv_select_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="84px"
+        android:layout_marginTop="68px"
+        android:gravity="center|left"
+        android:text="请选择回收类型开始投递"
+        android:textColor="#ff222222"
+        android:textSize="32px" />
+
+    <Button
+        android:id="@+id/btn_big_piece"
+        android:layout_width="200px"
+        android:layout_height="70px"
+        android:layout_marginLeft="520px"
+        android:layout_marginTop="55px"
+        android:background="@drawable/big_piece_btn_shape_portal"
+        android:paddingBottom="15px"
+        android:paddingRight="15px"
+        android:paddingLeft="60px"
+        android:paddingTop="15px"
+        android:text="大件回收"
+        android:textColor="#ffffffff"
+        android:textSize="28px" />
+
+    <Button
+        android:id="@+id/btn_guide"
+        android:layout_width="200px"
+        android:layout_height="70px"
+        android:layout_alignTop="@id/btn_big_piece"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@id/btn_big_piece"
+        android:background="@drawable/guide_btn_shape_portal"
+        android:paddingBottom="15px"
+        android:paddingLeft="14px"
+        android:paddingRight="-14dp"
+        android:paddingTop="15px"
+        android:text="投递指引"
+        android:textColor="#ffffffff"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@id/tv_line"
+        android:layout_width="960px"
+        android:layout_height="2px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="179px"
+        android:background="#ffe2e2e2" />
+
+    <ImageButton
+        android:id="@+id/imBtn_bottle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="241px"
+        android:background="#00000000"
+        android:src="@drawable/bottle" />
+
+    <TextView
+        android:id="@id/tv_bottle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_bottle"
+        android:layout_below="@id/imBtn_bottle"
+        android:layout_marginLeft="33px"
+        android:layout_marginTop="23px"
+        android:gravity="center|left"
+        android:text="饮料瓶"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@id/tv_bottle_price"
+        android:layout_width="92px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_bottle"
+        android:layout_below="@id/imBtn_bottle"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="62px"
+        android:gravity="center|left"
+        android:text="0.05元/个"
+        android:textColor="#ff666666"
+        android:textSize="20px" />
+
+    <ImageButton
+        android:id="@+id/imBtn_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imBtn_bottle"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@id/imBtn_bottle"
+        android:background="#00000000"
+        android:src="@drawable/paper" />
+
+    <TextView
+        android:id="@+id/tv_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_paper"
+        android:layout_below="@id/imBtn_paper"
+        android:layout_marginLeft="47px"
+        android:layout_marginTop="23px"
+        android:gravity="center|left"
+        android:text="纸类"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_paper_price"
+        android:layout_width="111px"
+        android:layout_height="28px"
+        android:layout_alignLeft="@id/imBtn_paper"
+        android:layout_below="@id/imBtn_paper"
+        android:layout_marginLeft="19px"
+        android:layout_marginTop="62px"
+        android:gravity="center|left"
+        android:text="0.70元/公斤"
+        android:textColor="#ff666666"
+        android:textSize="20px" />
+
+    <ImageButton
+        android:id="@+id/imBtn_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imBtn_paper"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@id/imBtn_paper"
+        android:background="#00000000"
+        android:src="@drawable/book" />
+
+    <TextView
+        android:id="@+id/tv_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_book"
+        android:layout_below="@id/imBtn_book"
+        android:layout_marginLeft="47px"
+        android:layout_marginTop="23px"
+        android:gravity="center|left"
+        android:text="书籍"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_book_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_book"
+        android:layout_below="@id/imBtn_book"
+        android:layout_marginLeft="19px"
+        android:layout_marginTop="62px"
+        android:gravity="center|left"
+        android:text="0.70元/公斤"
+        android:textColor="#ff666666"
+        android:textSize="20px" />
+
+    <ImageButton
+        android:id="@+id/imBtn_plastic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imBtn_book"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@id/imBtn_book"
+        android:background="#00000000"
+        android:src="@drawable/plastic" />
+
+    <TextView
+        android:id="@+id/tv_plastic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_plastic"
+        android:layout_below="@id/imBtn_plastic"
+        android:layout_marginLeft="47px"
+        android:layout_marginTop="23px"
+        android:gravity="center|left"
+        android:text="塑料"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_plastic_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_plastic"
+        android:layout_below="@id/imBtn_plastic"
+        android:layout_marginLeft="19px"
+        android:layout_marginTop="62px"
+        android:gravity="center|left"
+        android:text="0.80元/公斤"
+        android:textColor="#ff666666"
+        android:textSize="20px" />
+
+    <ImageButton
+        android:id="@+id/imBtn_fabric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_bottle"
+        android:layout_below="@id/imBtn_bottle"
+        android:layout_marginTop="161px"
+        android:background="#00000000"
+        android:src="@drawable/fabric" />
+
+    <TextView
+        android:id="@+id/tv_fabric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_fabric"
+        android:layout_below="@id/imBtn_fabric"
+        android:layout_marginLeft="33px"
+        android:layout_marginTop="23px"
+        android:gravity="center|left"
+        android:text="纺织物"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_fabric_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_fabric"
+        android:layout_below="@id/imBtn_fabric"
+        android:layout_marginLeft="19px"
+        android:layout_marginTop="62px"
+        android:gravity="center|left"
+        android:text="0.20元/公斤"
+        android:textColor="#ff666666"
+        android:textSize="20px" />
+
+    <ImageButton
+        android:id="@+id/imBtn_metal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imBtn_fabric"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@id/imBtn_fabric"
+        android:background="#00000000"
+        android:src="@drawable/metal" />
+
+    <TextView
+        android:id="@+id/tv_metal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_metal"
+        android:layout_below="@id/imBtn_metal"
+        android:layout_marginLeft="47px"
+        android:layout_marginTop="23px"
+        android:gravity="center|left"
+        android:text="金属"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_metal_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_metal"
+        android:layout_below="@id/imBtn_metal"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="62px"
+        android:gravity="center|left"
+        android:text="0.80元/公斤"
+        android:textColor="#ff666666"
+        android:textSize="20px" />
+
+    <ImageButton
+        android:id="@+id/imBtn_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imBtn_metal"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@id/imBtn_metal"
+        android:background="#00000000"
+        android:src="@drawable/glass" />
+
+    <TextView
+        android:id="@+id/tv_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_glass"
+        android:layout_below="@id/imBtn_glass"
+        android:layout_marginLeft="29px"
+        android:layout_marginTop="17px"
+        android:gravity="center|left"
+        android:text="玻璃"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/img_public"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_glass"
+        android:layout_below="@id/imBtn_glass"
+        android:layout_marginLeft="96px"
+        android:layout_marginTop="17px"
+        android:src="@drawable/public_flag" />
+
+    <TextView
+        android:id="@id/tv_glass_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_glass"
+        android:layout_below="@id/imBtn_glass"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="58px"
+        android:gravity="center|left"
+        android:text="1积分/次"
+        android:textColor="#ff666666"
+        android:textSize="20px" />
+
+    <ImageButton
+        android:id="@+id/imBtn_harm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imBtn_glass"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@id/imBtn_glass"
+        android:background="#00000000"
+        android:src="@drawable/harm" />
+
+    <TextView
+        android:id="@+id/tv_harm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_harm"
+        android:layout_below="@id/imBtn_harm"
+        android:layout_marginLeft="-3px"
+        android:layout_marginTop="23px"
+        android:gravity="center|left"
+        android:text="有害垃圾"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/img_public_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_harm"
+        android:layout_below="@id/imBtn_harm"
+        android:layout_marginLeft="120px"
+        android:layout_marginTop="21px"
+        android:src="@drawable/public_flag" />
+
+    <TextView
+        android:id="@+id/tv_harm_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_harm"
+        android:layout_below="@id/imBtn_harm"
+        android:layout_marginLeft="38px"
+        android:layout_marginTop="62px"
+        android:gravity="center|left"
+        android:text="1积分/次"
+        android:textColor="#ff666666"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/tip_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39px"
+        android:layout_marginTop="948px"
+        android:gravity="center|left"
+        android:text="*带有"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/img_public_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tip_01"
+        android:layout_marginLeft="11px"
+        android:layout_marginTop="3px"
+        android:layout_toRightOf="@id/tip_01"
+        android:src="@drawable/public_flag" />
+
+    <TextView
+        android:id="@+id/tip_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tip_01"
+        android:layout_marginLeft="11px"
+        android:layout_toRightOf="@id/img_public_03"
+        android:gravity="center|left"
+        android:text="标志为公益回收类，只获得环保积分"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tip_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tip_01"
+        android:layout_below="@id/tip_01"
+        android:layout_marginTop="6px"
+        android:gravity="center|left"
+        android:text="*投递"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tip_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tip_03"
+        android:layout_marginLeft="11px"
+        android:layout_toRightOf="@id/tip_03"
+        android:gravity="center|left"
+        android:text="60克"
+        android:textColor="#ff0285ff"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tip_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tip_04"
+        android:layout_marginLeft="11px"
+        android:layout_toRightOf="@id/tip_04"
+        android:gravity="center|left"
+        android:text="以上才会获得环保金"
+        android:textColor="#ff222222"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/weixin"
+        android:layout_width="210px"
+        android:layout_height="270px"
+        android:layout_marginLeft="750px"
+        android:layout_marginTop="856px"
+        android:src="@drawable/small_routine" />
+
+    <TextView
+        android:id="@+id/full_warning_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imBtn_bottle"
+        android:layout_alignTop="@id/imBtn_bottle"
+        android:layout_marginLeft="33px"
+        android:layout_marginTop="-32px"
+        android:background="@drawable/full_warning"
+        android:paddingBottom="9px"
+        android:paddingLeft="27px"
+        android:paddingRight="21px"
+        android:paddingTop="6px"
+        android:text="暂满"
+        android:textColor="#ffffffff"
+        android:textSize="20px"
+        android:visibility="gone"
+      />
+
+    <TextView
+        android:id="@+id/full_warning_02"
+        android:layout_width="30.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignLeft="@id/imBtn_paper"
+        android:layout_alignTop="@id/imBtn_paper"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="-11.0dip"
+        android:background="@drawable/full_warning"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="7.0dip"
+        android:paddingTop="2.0dip"
+        android:text="暂满"
+        android:textColor="#ffffffff"
+        android:textSize="7.0sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/full_warning_03"
+        android:layout_width="30.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignLeft="@id/imBtn_book"
+        android:layout_alignTop="@id/imBtn_book"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="-11.0dip"
+        android:background="@drawable/full_warning"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="7.0dip"
+        android:paddingTop="2.0dip"
+        android:text="暂满"
+        android:textColor="#ffffffff"
+        android:textSize="7.0sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/full_warning_04"
+        android:layout_width="30.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignLeft="@id/imBtn_plastic"
+        android:layout_alignTop="@id/imBtn_plastic"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="-11.0dip"
+        android:background="@drawable/full_warning"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="7.0dip"
+        android:paddingTop="2.0dip"
+        android:text="暂满"
+        android:textColor="#ffffffff"
+        android:textSize="7.0sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/full_warning_05"
+        android:layout_width="30.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignLeft="@id/imBtn_fabric"
+        android:layout_alignTop="@id/imBtn_fabric"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="-11.0dip"
+        android:background="@drawable/full_warning"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="7.0dip"
+        android:paddingTop="2.0dip"
+        android:text="暂满"
+        android:textColor="#ffffffff"
+        android:textSize="7.0sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/full_warning_06"
+        android:layout_width="30.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignLeft="@id/imBtn_metal"
+        android:layout_alignTop="@id/imBtn_metal"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="-11.0dip"
+        android:background="@drawable/full_warning"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="7.0dip"
+        android:paddingTop="2.0dip"
+        android:text="暂满"
+        android:textColor="#ffffffff"
+        android:textSize="7.0sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/full_warning_07"
+        android:layout_width="30.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignLeft="@id/imBtn_glass"
+        android:layout_alignTop="@id/imBtn_glass"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="-11.0dip"
+        android:background="@drawable/full_warning"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="7.0dip"
+        android:paddingTop="2.0dip"
+        android:text="暂满"
+        android:textColor="#ffffffff"
+        android:textSize="7.0sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/full_warning_08"
+        android:layout_width="30.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignLeft="@id/imBtn_harm"
+        android:layout_alignTop="@id/imBtn_harm"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="-11.0dip"
+        android:background="@drawable/full_warning"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="7.0dip"
+        android:paddingTop="2.0dip"
+        android:text="暂满"
+        android:textColor="#ffffffff"
+        android:textSize="7.0sp"
+        android:visibility="invisible" />
+</RelativeLayout>
+</RelativeLayout>

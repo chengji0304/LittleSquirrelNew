@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="333dp"
+    android:layout_height="398dp"
+    android:background="@drawable/home_page_mid_bg">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_none"
+        android:layout_marginTop="101dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/error"/>
+        <TextView
+            android:id="@+id/tv_none_moneypoint"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="本次投递未获得环保金 "
+            android:textColor="#ff333333"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_describe"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="投递的物品太轻啦，60g以上才会获得环保金噢"
+            android:textColor="#ff999999"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_money"
+        android:layout_marginTop="68dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@id/tv_icon"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/deliver_sucess"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:id="@id/tv_tip_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="投递成功！已投递物品如下"
+                android:textColor="#ff333333"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="27dp"
+            android:id="@+id/img_catogry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/bottle" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="饮料瓶 1个"
+            android:textColor="#ff333333"
+            android:textSize="9sp" />
+        <TextView
+            android:layout_marginTop="13dp"
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center|left"
+            android:text="获得环保金 0.06"
+            android:textColor="#ff333333"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+
+            android:id="@id/btn_again"
+            android:layout_width="133dp"
+            android:layout_height="33dp"
+
+            android:background="@drawable/user_btn_shape_133x33dp_green"
+            android:gravity="center"
+            android:text="继续投递"
+            android:textColor="#ffffffff"
+            android:textSize="11sp" />
+        <Button
+            android:layout_marginLeft="17dp"
+            android:id="@id/btn_over"
+            android:layout_width="133dp"
+            android:layout_height="33dp"
+            android:background="@drawable/user_btn_shape_133x33dp_pink"
+            android:gravity="center"
+            android:text="结束投递"
+            android:textColor="#ffffffff"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

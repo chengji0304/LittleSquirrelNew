@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1195px"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_wait"
+        android:visibility="visible"
+        android:layout_width="333dp"
+        android:layout_height="398dp"
+        android:gravity="center"
+        android:background="@drawable/home_page_mid_bg"
+        android:orientation="vertical">
+        <ImageView
+
+            android:id="@+id/img_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/init"
+
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="正在努力加载中…"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            android:gravity="center_vertical"
+
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_user_select"
+        android:layout_width="333dp"
+        android:layout_height="398dp"
+        android:background="@drawable/home_page_mid_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="28dp"
+                android:text="请选择回收类型开始投递"
+                android:textColor="#ff222222"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btn_big_piece"
+                android:layout_width="67dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/big_piece_btn_shape_portal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="大件回收"
+                android:textColor="#ffffffff"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/btn_guide"
+                android:layout_width="67dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/guide_btn_shape_portal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="投递指引"
+                android:textColor="#ffffffff"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_line"
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#ffe2e2e2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ry_grabage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/rl_weixin"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tip_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="*带有"
+                        android:textColor="#ff222222"
+                        android:textSize="9sp" />
+
+                    <ImageView
+                        android:id="@+id/img_public_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tip_01"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/public_flag" />
+
+                    <TextView
+                        android:id="@+id/tip_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="标志为公益回收类，只获得环保积分"
+                        android:textColor="#ff222222"
+                        android:textSize="9sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tip_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="*投递"
+                        android:textColor="#ff222222"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/tip_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center|left"
+                        android:text="60克"
+                        android:textColor="#ff0285ff"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/tip_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center|left"
+                        android:text="以上才会获得环保金或环保积分"
+                        android:textColor="#ff222222"
+                        android:textSize="9sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/small_routine" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

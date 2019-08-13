@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/img_glass_cup"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/glass_cup" />
+
+    <TextView
+        android:id="@id/tv_glass_cup"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="33.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="酒杯"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_glass_winebottle"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="82.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/glass_winebottle" />
+
+    <TextView
+        android:id="@id/tv_glass_winebottle"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="100.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="酒瓶"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_glass_glasses"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="148.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/glass_glasses" />
+
+    <TextView
+        android:id="@id/tv_glass_glasses"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="158.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="玻璃碎片"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_glass_plates"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="215.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/glass_plates" />
+
+    <TextView
+        android:id="@id/tv_glass_plates"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="224.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="玻璃餐具"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+</merge>

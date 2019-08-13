@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/img_paper_carton"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/paper_carton" />
+
+    <TextView
+        android:id="@id/tv_paper_carton"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="33.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="纸盒"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_paper_bag"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="82.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/paper_bag" />
+
+    <TextView
+        android:id="@id/tv_paper_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="89.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="包装纸袋"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_paper_news"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="148.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/paper_news" />
+
+    <TextView
+        android:id="@id/tv_paper_news"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="162.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="废报纸"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_paper_card"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="215.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/paper_card" />
+
+    <TextView
+        android:id="@id/tv_paper_card"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="229.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="易拉罐"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+</merge>

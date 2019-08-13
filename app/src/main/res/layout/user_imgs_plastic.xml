@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/img_plastic_shell"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/plastic_shell" />
+
+    <TextView
+        android:id="@id/tv_plastic_shell"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="塑料外壳"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_plastic_container"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="82.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/plastic_container" />
+
+    <TextView
+        android:id="@id/tv_plastic_container"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="95.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="收纳盒"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_plastic_basin"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="148.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/plastic_basin" />
+
+    <TextView
+        android:id="@id/tv_plastic_basin"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="156.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="塑料桶/盆"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_plastic_pipe"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="215.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/plastic_pipe" />
+
+    <TextView
+        android:id="@id/tv_plastic_pipe"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="224.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="塑料水管"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+</merge>

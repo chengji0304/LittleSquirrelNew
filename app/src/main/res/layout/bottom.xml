@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="333dp"
+    android:layout_height="127dp"
+    android:background="@drawable/buttom_bg"
+    android:gravity="center">
+        <com.youth.banner.Banner
+            android:background="@drawable/buttom_bg"
+            android:id="@+id/banner_buttom"
+            android:layout_width="333dp"
+            android:layout_height="127dp"
+            />
+
+</RelativeLayout>

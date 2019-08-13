@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="29dp" android:width="60dp" />
+            <gradient android:startColor="#ff28e98d" android:endColor="#ff1dd17b" android:useLevel="true" android:angle="180.0" android:type="linear" />
+            <corners android:topLeftRadius="33dp" android:topRightRadius="0dp" android:bottomLeftRadius="33dp" android:bottomRightRadius="0dp" />
+        </shape>
+    </item>
+    <item android:height="17dp" android:width="17dp" android:left="8dp" android:top="6dp" android:right="35dp" android:bottom="6dp">
+        <bitmap android:src="@drawable/timer" />
+    </item>
+</layer-list>

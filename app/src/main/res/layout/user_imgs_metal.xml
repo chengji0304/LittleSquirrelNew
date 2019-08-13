@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/img_metal_wire"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/metal_wire" />
+
+    <TextView
+        android:id="@id/tv_metal_wire"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="33.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="电线"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_metal_frame"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="82.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/metal_frame" />
+
+    <TextView
+        android:id="@id/tv_metal_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="89.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="铁质置物架"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_metal_plates"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="148.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/metal_plates" />
+
+    <TextView
+        android:id="@id/tv_metal_plates"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="158.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="金属餐具"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_metal_pan"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="215.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/metal_pan" />
+
+    <TextView
+        android:id="@id/tv_metal_pan"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="229.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="平底锅"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+</merge>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_big_recovery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.panda.littlesquirrel.activity.BigRecoveryActivity">
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="40px">
+        <include layout="@layout/top" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp">
+
+        <include layout="@layout/big_piece_recovery"/>
+    </FrameLayout>
+
+
+    <com.panda.littlesquirrel.view.BackAndTimerView
+        android:visibility="visible"
+        android:id="@+id/backAndTime"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+         />
+</RelativeLayout>

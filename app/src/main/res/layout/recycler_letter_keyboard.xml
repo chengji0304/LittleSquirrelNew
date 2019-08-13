@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320.0dip"
+    android:layout_height="147.0dip"
+    android:background="@drawable/recycler_bg_shape_keybord">
+
+    <Button
+        android:id="@id/btn_letter_num_1"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="7.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_2"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="35.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_3"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="64.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_4"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="92.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_5"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="120.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_6"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="149.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_7"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="177.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_8"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="205.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_9"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="234.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_num_0"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="262.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_del"
+        android:layout_width="22.0dp"
+        android:layout_height="22.0dp"
+        android:layout_marginLeft="290.0dp"
+        android:layout_marginTop="21.0dp"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard_del" />
+
+    <RelativeLayout
+        android:id="@id/recycler_lowerLetter_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="29.0dp"
+        android:layout_marginTop="46.0dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@id/btn_letter_q"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="21.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="q"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_w"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="50.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="w"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_e"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="79.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="e"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_r"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="107.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="r"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_t"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="135.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="t"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_y"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="164.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="y"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_u"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="192.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="u"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_i"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="220.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="i"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_o"
+            android:layout_width="22.0dp"
+            android:layout_height="22.0dp"
+            android:layout_marginLeft="248.0dp"
+            android:layout_marginTop="0.0dp"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="o"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_p"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="277.0dip"
+            android:layout_marginTop="0.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="p"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_a"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="36.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="a"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_s"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="64.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="s"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_d"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="92.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="d"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_f"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="121.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="f"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_g"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="149.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="g"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_h"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="177.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="h"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_j"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="206.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="j"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_k"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="234.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="k"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_l"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="262.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="l"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_z"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="79.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="z"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_x"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="107.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_c"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="135.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="c"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_v"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="164.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="v"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_b"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="192.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="b"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_n"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="220.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="n"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@id/btn_letter_m"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_marginLeft="249.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@drawable/recycler_btn_shape_letter_keyboard"
+            android:gravity="center"
+            android:text="m"
+            android:textAllCaps="false"
+            android:textColor="#ff333333"
+            android:textSize="11.0sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@id/btn_change_letter_state"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="50.0dip"
+        android:layout_marginTop="96.0dip"
+        android:background="@drawable/recycler_btn_shape_letter_keybaord_switch_default" />
+
+    <Button
+        android:id="@id/btn_dot"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="68.0dip"
+        android:layout_marginTop="121.0dip"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="."
+        android:textAllCaps="false"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_colon"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="96.0dip"
+        android:layout_marginTop="121.0dip"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text=":"
+        android:textAllCaps="false"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_oblique"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="124.0dip"
+        android:layout_marginTop="121.0dip"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="/"
+        android:textAllCaps="false"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_underline"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="153.0dip"
+        android:layout_marginTop="121.0dip"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="_"
+        android:textAllCaps="false"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_line"
+        android:layout_width="22.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="181.0dip"
+        android:layout_marginTop="121.0dip"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard"
+        android:gravity="center"
+        android:text="—"
+        android:textAllCaps="false"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_letter_login"
+        android:layout_width="43.0dip"
+        android:layout_height="22.0dip"
+        android:layout_marginLeft="209.0dip"
+        android:layout_marginTop="121.0dip"
+        android:background="@drawable/recycler_btn_shape_letter_keyboard_login"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#ffffffff"
+        android:textSize="10.0sp" />
+</RelativeLayout>

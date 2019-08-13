@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/img_bottle_coco"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/bottle_coco" />
+
+    <TextView
+        android:id="@id/tv_bottle_coco"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="塑料可乐瓶"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_bottle_mineral"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="82.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/bottle_fruit" />
+
+    <TextView
+        android:id="@id/tv_bottle_mineral"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="91.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="矿泉水瓶"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_bottle_milk"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="148.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/bottle_milk" />
+
+    <TextView
+        android:id="@id/tv_bottle_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="162.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="牛奶瓶"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_bottle_can"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="215.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/bottle_can" />
+
+    <TextView
+        android:id="@id/tv_bottle_can"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="229.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="易拉罐"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+</merge>

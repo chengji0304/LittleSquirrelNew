@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.panda.littlesquirrel.activity.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="40px">
+        <include layout="@layout/top" />
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/ll_mid"
+       android:layout_below="@id/ll_top"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="40px"
+       android:layout_marginLeft="40px"
+       android:layout_marginTop="40px">
+       <include layout="@layout/user_select_garbage"/>
+   </LinearLayout>
+  <LinearLayout
+      android:layout_below="@id/ll_mid"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="40px"
+      android:layout_marginTop="40px">
+      <include layout="@layout/bottom" />
+  </LinearLayout>
+
+
+        <com.panda.littlesquirrel.view.BackAndTimerView
+            android:id="@+id/backAndTime"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="285px" />
+
+
+</RelativeLayout>

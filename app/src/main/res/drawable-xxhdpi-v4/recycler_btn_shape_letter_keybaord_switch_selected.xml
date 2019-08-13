@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="22.0dip" android:width="22.0dip" />
+            <gradient android:startColor="#ffffffff" android:endColor="#fff2f2f2" android:useLevel="true" android:angle="180.0" android:type="linear" />
+            <corners android:radius="3.0dip" />
+        </shape>
+    </item>
+    <item android:height="17.0dip" android:width="17.0dip" android:left="3.0dip" android:top="3.0dip" android:right="2.0dip" android:bottom="2.0dip">
+        <bitmap android:src="@drawable/switch_letter_selected" />
+    </item>
+</layer-list>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/img_harm_drug"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/harm_drug" />
+
+    <TextView
+        android:id="@id/tv_harm_drug"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="过期药片"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_harm_temper"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="82.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/harm_temper" />
+
+    <TextView
+        android:id="@id/tv_harm_temper"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="95.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="温度计"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_harm_disinfector"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="148.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/harm_disinfector" />
+
+    <TextView
+        android:id="@id/tv_harm_disinfector"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="162.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="消毒剂"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_harm_cell"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="215.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/harm_cell" />
+
+    <TextView
+        android:id="@id/tv_harm_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="229.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="废电池"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+</merge>

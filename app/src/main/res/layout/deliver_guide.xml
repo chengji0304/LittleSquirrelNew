@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="333.0dip"
+    android:layout_height="398.0dip"
+    android:background="@drawable/home_page_mid_bg">
+
+    <TextView
+        android:id="@id/tv_guide_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36.0dip"
+        android:text="投递指引"
+        android:textColor="#ff333333"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@id/tv_guide_title_bg"
+        android:layout_width="77.0dip"
+        android:layout_height="10.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48.0dip"
+        android:background="@drawable/guide_tv_shape_title" />
+
+    <TextView
+        android:id="@id/tv_tip_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46.0dip"
+        android:layout_marginTop="82.0dip"
+        android:text="1、选择投递物品种类"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_tip_1"
+        android:layout_width="98.0dip"
+        android:layout_height="68.0dip"
+        android:layout_marginLeft="45.0dip"
+        android:layout_marginTop="99.0dip"
+        android:src="@drawable/guide_select" />
+
+    <TextView
+        android:id="@id/tv_tip_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="191.0dip"
+        android:layout_marginTop="82.0dip"
+        android:text="2、扫码/填写手机号开箱"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_tip_2"
+        android:layout_width="98.0dip"
+        android:layout_height="68.0dip"
+        android:layout_marginLeft="189.0dip"
+        android:layout_marginTop="99.0dip"
+        android:src="@drawable/guide_scan" />
+
+    <TextView
+        android:id="@id/tv_tip_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46.0dip"
+        android:layout_marginTop="186.0dip"
+        android:text="3、分品类投递"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_tip_3"
+        android:layout_width="98.0dip"
+        android:layout_height="68.0dip"
+        android:layout_marginLeft="45.0dip"
+        android:layout_marginTop="203.0dip"
+        android:src="@drawable/guide_deliver" />
+
+    <TextView
+        android:id="@id/tv_tip_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="191.0dip"
+        android:layout_marginTop="186.0dip"
+        android:text="4、结束投递"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_tip_4"
+        android:layout_width="98.0dip"
+        android:layout_height="68.0dip"
+        android:layout_marginLeft="190.0dip"
+        android:layout_marginTop="203.0dip"
+        android:src="@drawable/guide_finish" />
+
+    <TextView
+        android:id="@id/tv_tip_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46.0dip"
+        android:layout_marginTop="290.0dip"
+        android:text="5、在小程序查看环保金"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_tip_5"
+        android:layout_width="98.0dip"
+        android:layout_height="68.0dip"
+        android:layout_marginLeft="45.0dip"
+        android:layout_marginTop="307.0dip"
+        android:src="@drawable/guide_check_money" />
+</RelativeLayout>

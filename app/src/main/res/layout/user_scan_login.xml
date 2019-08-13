@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <LinearLayout
+        android:id="@+id/ll_wait"
+        android:visibility="visible"
+        android:layout_width="333dp"
+        android:layout_height="398dp"
+        android:gravity="center"
+        android:background="@drawable/home_page_mid_bg"
+        android:orientation="vertical">
+        <ImageView
+
+            android:id="@+id/img_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/init"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="正在努力加载中…"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_scan"
+        android:visibility="gone"
+        android:layout_width="333dp"
+        android:layout_height="398dp"
+        android:gravity="center"
+        android:background="@drawable/home_page_mid_bg"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="46dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_marginRight="30px"
+            android:id="@id/tv_line_09"
+            android:layout_width="39dp"
+            android:layout_height="1dp"
+            android:background="#80999999" />
+
+        <TextView
+            android:id="@id/tv_tip_09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="请扫码登陆"
+            android:textStyle="bold"
+            android:textColor="#ff333333"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginLeft="30px"
+            android:id="@id/tv_line_10"
+            android:layout_width="39dp"
+            android:layout_height="1dp"
+
+            android:background="#80999999" />
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="center"
+            android:background="@drawable/scan_login_bg">
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="87dp"
+                android:layout_marginLeft="87dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:gravity="center"
+                    android:id="@id/tv_line_03"
+                    android:layout_width="39dp"
+                    android:layout_height="1dp"
+
+                    android:background="#80ffffff" />
+                <TextView
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:id="@id/tv_recycler_scan_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="请扫码登录"
+                    android:textColor="#ffffffff"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@id/tv_line_04"
+                    android:layout_width="39dp"
+                    android:layout_height="1dp"
+                    android:background="#80ffffff" />
+            </LinearLayout>
+            <ImageView
+                android:id="@id/img_user_qrcode"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_qrcode_border_shape"
+                android:padding="3dp"
+                android:src="@drawable/login_qrcode" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:id="@id/tv_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="请在微信小程序中点击扫一扫操作"
+                android:layout_marginBottom="12dp"
+                android:textColor="#ffffffff"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/rl_sao"
+        android:id="@id/btn_switch_tel"
+        android:layout_width="173dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:background="@drawable/user_btn_shape_switch_tel_login"
+        android:gravity="center_vertical"
+        android:paddingLeft="72dp"
+        android:text="手机号登录"
+        android:textColor="#ffffffff"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_below="@+id/btn_switch_tel"
+        android:id="@id/tv_tip_12"
+        android:layout_width="wrap_content"
+        android:layout_height="14.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center|left"
+        android:text="支持输入手机号码登陆"
+        android:textColor="#ff999999"
+        android:textSize="10.0sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

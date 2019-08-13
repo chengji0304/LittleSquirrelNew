@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="333.0dip"
+    android:layout_height="398.0dip"
+    android:background="@drawable/home_page_mid_bg">
+
+    <ImageView
+        android:id="@id/img_warning"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101.0dip"
+        android:src="@drawable/error" />
+
+    <TextView
+        android:id="@id/tv_tip_01"
+        android:layout_width="wrap_content"
+        android:layout_height="16.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="181.0dip"
+        android:gravity="center|left"
+        android:text="本次投递未获得环保金 "
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <TextView
+        android:id="@id/tv_tip_02"
+        android:layout_width="194.0dip"
+        android:layout_height="13.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207.0dip"
+        android:gravity="center|left"
+        android:text="投递的物品太轻啦，60g以上才会获得环保金噢"
+        android:textColor="#ff999999"
+        android:textSize="9.0sp" />
+
+    <Button
+        android:id="@id/btn_over"
+        android:layout_width="133.0dip"
+        android:layout_height="33.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginTop="258.0dip"
+        android:background="@drawable/user_btn_shape_133x33dp_pink"
+        android:gravity="center"
+        android:text="结束投递"
+        android:textColor="#ffffffff"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_again"
+        android:layout_width="133.0dip"
+        android:layout_height="33.0dip"
+        android:layout_marginLeft="175.0dip"
+        android:layout_marginTop="258.0dip"
+        android:background="@drawable/user_btn_shape_133x33dp_green"
+        android:gravity="center"
+        android:text="继续投递"
+        android:textColor="#ffffffff"
+        android:textSize="11.0sp" />
+</RelativeLayout>

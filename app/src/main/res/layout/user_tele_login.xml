@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/home_page_mid_bg">
+   <LinearLayout
+       android:layout_marginTop="59dp"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@id/tv_line_01"
+           android:layout_width="39dp"
+           android:layout_height="1dp"
+           android:background="#80999999" />
+
+       <TextView
+           android:layout_marginRight="12dp"
+           android:layout_marginLeft="12dp"
+           android:id="@id/tv_tip_01"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center|left"
+           android:text="手机号码登录"
+           android:textColor="#ff333333"
+           android:textSize="11sp" />
+       <TextView
+           android:id="@id/tv_line_02"
+           android:layout_width="39dp"
+           android:layout_height="1dp"
+           android:background="#80999999" />
+
+   </LinearLayout>
+    <TextView
+        android:id="@id/tv_tip_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:gravity="center|left"
+        android:text="（推荐新用户使用）"
+        android:textColor="#ff999999"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:layout_width="233dp"
+        android:layout_height="33dp"
+        android:background="@drawable/user_edit_shape_tel_login">
+
+        <EditText
+            android:layout_weight="2"
+            android:cursorVisible="false"
+            android:background="@null"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@id/ed_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:hint="请输入您的手机号码"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:textColor="#ff333333"
+            android:textColorHint="#ff999999"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:textSize="10.0sp" />
+
+        <Button
+            android:id="@id/btn_ok"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/user_btn_selector_login_ok"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ff999999"
+            android:textSize="11.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/tv_tip_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="该号码将成为您的小松鼠账号"
+        android:textColor="#ff999999"
+        android:textSize="10sp" />
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@id/check_protocol"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:background="@drawable/user_check_selector_protocol"
+            android:button="@null"
+            android:checked="true"
+            />
+        <TextView
+            android:id="@id/tv_tip_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="我同意"
+            android:textColor="#ff999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@id/tv_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="《小松鼠用户协议》"
+            android:textColor="#ff008dff"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="66px"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:id="@id/tv_scan"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:background="@drawable/scan" />
+      <TextView
+          android:id="@id/tv_switch_scan"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:gravity="center|left"
+          android:text="切换扫码开箱"
+          android:layout_marginLeft="3dp"
+          android:textColor="#ff0390ff"
+          android:textSize="11sp" />
+
+  </LinearLayout>
+    <com.panda.littlesquirrel.view.UserDigitalKeyboard
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:id="@id/user_digital_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="9dp"/>
+</LinearLayout>

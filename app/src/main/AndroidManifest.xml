@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.panda.littlesquirrel">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <application
+        android:name=".config.MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme,android:allowBackup">
+
+        <!-- <meta-data -->
+        <!-- android:name="design_width" -->
+        <!-- android:value="1080" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="design_height" -->
+        <!-- android:value="1920" /> -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".service.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".service.UpgradeApkReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name=".service.AlarmReceiver"/>
+        <service
+            android:name=".service.SerialService"
+            android:enabled="true" />
+        <service
+            android:name=".service.PollDevStatusService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.UpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".service.UpdateReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="k8na5HTLwok6qvWwlNy2TsySLtTigtI9" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".fragment.ADBannerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.CollectLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.CollectTeleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.RecylerSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.CollectorPayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.CollectorTakeGoodsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.CollectorTakeFinishActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.BigRecoveryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.QuickGuideActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.UserLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".activity.UserTeleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name=".activity.UserSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UserTypeSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.DeliverSuccessActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.DeliverFinishActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.DeliverListFinishActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".activity.SlotSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SettingLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.RightBoxSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".activity.LeftBoxSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"></activity>
+    </application>
+
+</manifest>

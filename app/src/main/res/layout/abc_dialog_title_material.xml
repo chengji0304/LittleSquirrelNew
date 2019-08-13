@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/title"
+        style="?android:attr/windowTitleStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingLeft="?android:dialogPreferredPadding"
+        android:paddingRight="?android:dialogPreferredPadding"
+        android:paddingTop="@dimen/abc_dialog_padding_top_material"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        tools:targetApi="lollipop_mr1" />
+
+    <include
+        layout="@layout/abc_screen_content_include"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+</android.support.v7.widget.FitWindowsLinearLayout>

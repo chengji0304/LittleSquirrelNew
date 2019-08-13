@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/img_book_textbook"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/book_textbook" />
+
+    <TextView
+        android:id="@id/tv_book_textbook"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="22.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="课本/书籍"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_book_journal"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="82.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/book_journal" />
+
+    <TextView
+        android:id="@id/tv_book_journal"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="89.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="杂志/书刊"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_book_pictorial"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="148.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/book_pictorial" />
+
+    <TextView
+        android:id="@id/tv_book_pictorial"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="156.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="画报/画册"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@id/img_book_office"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_marginLeft="215.0dip"
+        android:layout_marginTop="33.0dip"
+        android:src="@drawable/book_office" />
+
+    <TextView
+        android:id="@id/tv_book_office"
+        android:layout_width="wrap_content"
+        android:layout_height="12.0dip"
+        android:layout_marginLeft="224.0dip"
+        android:layout_marginTop="103.0dip"
+        android:gravity="center|left"
+        android:text="办公废纸"
+        android:textColor="#ff333333"
+        android:textSize="9.0sp" />
+</merge>

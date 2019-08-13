@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="398dp"
+        android:background="@drawable/home_page_mid_bg"
+        android:orientation="vertical">
+
+
+          <LinearLayout
+              android:layout_marginTop="64dp"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <View
+
+                  android:layout_width="39dp"
+                  android:layout_height="1dp"
+                  android:background="#999999"/>
+              <TextView
+                  android:layout_marginRight="17dp"
+                  android:layout_marginLeft="17dp"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="11sp"
+                  android:textStyle="bold"
+                  android:textColor="#333333"
+                  android:text="箱体桶号:0-5"/>
+              <View
+
+                  android:layout_width="39dp"
+                  android:layout_height="1dp"
+                  android:background="#999999"/>
+          </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="233dp"
+            android:layout_height="33dp"
+            android:background="@drawable/set_edit_shape">
+            <TextView
+                android:id="@+id/tv_set_tv"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="11.0sp"
+                android:textColor="#333333"
+                android:text="开门占空比:"/>
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:cursorVisible="false"
+                android:background="@null"
+                android:id="@+id/ed_set"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:hint="请输入开门占空比"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="#ff333333"
+                android:textColorHint="#ff999999"
+                android:textSize="10.0sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_set_type"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10.0sp"
+            android:text="占空比范围:0-99"/>
+        <TextView
+            android:id="@+id/tv_set_result"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textColor="#333333"
+            android:textSize="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已经设置开门占空比:59"/>
+
+        <com.panda.littlesquirrel.view.DigitalKeyboard
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/recycler_digital_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+</RelativeLayout>

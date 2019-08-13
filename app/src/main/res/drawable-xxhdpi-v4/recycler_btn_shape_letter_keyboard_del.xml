@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="22.0dip" android:width="22.0dip" />
+            <gradient android:startColor="#fffa8295" android:endColor="#fffd9d99" android:useLevel="true" android:angle="360.0" android:type="linear" />
+            <corners android:radius="3.0dip" />
+        </shape>
+    </item>
+    <item android:height="20.0dip" android:width="20.0dip" android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip">
+        <bitmap android:src="@drawable/keybord_del" />
+    </item>
+</layer-list>

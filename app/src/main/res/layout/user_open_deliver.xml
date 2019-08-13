@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1000px"
+    android:layout_height="1195px"
+    android:background="@drawable/home_page_mid_bg">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:id="@+id/normal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_opening_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:gravity="center|left"
+            android:text="小松鼠正在努力开箱…"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@id/tv_line_01"
+                android:layout_width="39dp"
+                android:layout_height="1dp"
+
+                android:background="#80999999" />
+            <TextView
+                android:id="@id/tv_tip_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="以下类型仅供参考"
+                android:textColor="#ff333333"
+                android:textSize="11sp" />
+            <TextView
+                android:id="@id/tv_line_02"
+                android:layout_width="39dp"
+                android:layout_height="1dp"
+
+                android:background="#80999999" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@id/imgs_show"
+            android:layout_width="283dp"
+            android:layout_height="147dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/user_bg_shape_deliver_imgs" >
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/ry_grabage_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="160dp"
+            android:layout_height="33dp"
+            android:background="@drawable/user_btn_selector_160x33dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="正在开箱…"
+            android:layout_marginTop="47dp"
+            android:textColor="#ff999999"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@id/tv_60g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center|left"
+            android:text="投递60克以上才会有环保金噢"
+            android:textColor="#ff999999"
+            android:textSize="9sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/deliver_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_marginTop="294px"
+            android:layout_gravity="center"
+            android:id="@id/img_bottle_deliver_state"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/bottle_once_deliver" />
+
+        <TextView
+            android:layout_marginTop="30px"
+            android:id="@id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center|left"
+            android:text="已投递 1 个"
+            android:textColor="#ff333333"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_marginTop="4px"
+            android:id="@+id/tv_tip_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="还可以继续投递，小松鼠一次只能接住一个饮料瓶噢"
+            android:textColor="#ff999999"
+            android:textSize="28px" />
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="480px"
+            android:layout_height="100px"
+            android:background="@drawable/user_btn_selector_160x33dp"
+            android:gravity="center"
+            android:text="投递完成"
+            android:layout_marginTop="119px"
+            android:textColor="#FFFFFF"
+            android:textSize="34px" />
+    </LinearLayout>
+
+</RelativeLayout>

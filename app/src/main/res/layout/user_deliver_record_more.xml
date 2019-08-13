@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="333.0dip"
+    android:layout_height="398.0dip"
+    android:background="@drawable/home_page_mid_bg">
+
+    <TextView
+        android:id="@id/tv_icon"
+        android:layout_width="13.0dip"
+        android:layout_height="13.0dip"
+        android:layout_marginLeft="97.0dip"
+        android:layout_marginTop="51.0dip"
+        android:background="@drawable/deliver_sucess"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@id/tv_tip_01"
+        android:layout_width="120.0dip"
+        android:layout_height="14.0dip"
+        android:layout_marginLeft="117.0dip"
+        android:layout_marginTop="51.0dip"
+        android:gravity="center|left"
+        android:text="投递成功！已投递物品如下"
+        android:textColor="#ff333333"
+        android:textSize="10.0sp" />
+
+    <ListView
+        android:id="@id/lv"
+        android:layout_width="253.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66.0dip"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="0.33000004dip"
+        android:footerDividersEnabled="false" />
+
+    <TextView
+        android:id="@id/tv_tip_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv"
+        android:layout_marginLeft="45.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center|left"
+        android:text="共收入"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <TextView
+        android:id="@id/tv_money_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_tip_02"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43.0dip"
+        android:gravity="center|left"
+        android:text="0.52 环保金"
+        android:textColor="#ff339aff"
+        android:textSize="11.0sp" />
+
+    <TextView
+        android:id="@id/tv_tip_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_tip_02"
+        android:layout_below="@id/tv_tip_02"
+        android:layout_marginTop="7.0dip"
+        android:gravity="center|left"
+        android:text="共收入"
+        android:textColor="#ff333333"
+        android:textSize="11.0sp" />
+
+    <TextView
+        android:id="@id/tv_encourage_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_tip_03"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43.0dip"
+        android:text="1 积分"
+        android:textColor="#ff339aff"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_over"
+        android:layout_width="133.0dip"
+        android:layout_height="33.0dip"
+        android:layout_below="@id/tv_tip_03"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginTop="13.0dip"
+        android:background="@drawable/user_btn_shape_133x33dp_pink"
+        android:gravity="center"
+        android:text="结束投递"
+        android:textColor="#ffffffff"
+        android:textSize="11.0sp" />
+
+    <Button
+        android:id="@id/btn_again"
+        android:layout_width="133.0dip"
+        android:layout_height="33.0dip"
+        android:layout_alignBottom="@id/btn_over"
+        android:layout_marginLeft="175.0dip"
+        android:background="@drawable/user_btn_shape_133x33dp_green"
+        android:gravity="center"
+        android:text="继续投递"
+        android:textColor="#ffffffff"
+        android:textSize="11.0sp" />
+</RelativeLayout>
